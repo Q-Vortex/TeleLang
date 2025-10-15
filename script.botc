@@ -1,0 +1,7 @@
+goto "Saved Messages"
+print "Hello"
+
+repeat 5 {
+  wait 1
+  print "Repeat Hello"
+}

@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+menu {
+    width: 1000px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.settup_container, .ide_container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.settup_container header, .ide_container header {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #F4F4F4;
+    color: #F4F4F4;
+}
+
+.ide_container {
+    background-color: #282828;
+}
+
+.ide {
+    display: flex;
+    height: 100%;
+    background-color: #282828;
+    box-shadow: 0 4px 4px 1px #00000050 inset;
+    border-radius: 24px;
+    padding: 10px;
+    overflow: scroll;
+    max-height: 480px;
+}
+
+.num {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25px;
+    color: #F87E7B;
+    font-weight: bold;
+}
+
+.edit_space {
+    width: 100%;
+    color: #F4F4F4;
+    font-weight: bold;
+    max-width: 410px;
+    width: 100%;
+    padding: 10px;
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    outline: none;
+}
+
+.edit_space div {
+    height: 25px;
+}
+
+.num_bar {
+    display: flex;
+    flex-direction: column;
+    background: #282828;
+    box-shadow: 0 4px 4px 2px #00000050;
+    width: 32px;
+    height: fit-content;
+    min-height: 100%;
+    border-radius: 100px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 5px;
+}
+
+.settup_container {
+    background-color: #2F2F2F;
+}
+
+.top_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.run_script, .save, .show_headles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F4F4F4;
+    cursor: pointer;
+    color: #282828;
+}
+
+.run_script i, .save i, .show_headles i {
+    margin-right: auto;
+    font-size: x-large;
+}
+
+.run_script h2, .save h2, .show_headles h2 {
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.bottom_info {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.input_shortcut_container, .input_save_path_container {
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    border-radius: 16px;
+    border: 2px solid #F4F4F4;   
+}
+
+.input_shortcut_container {
+    margin-bottom: 10px;
+}
+
+.input_shortcut, .input_save_path {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px;
+    color: #F4F4F4;
+    font-weight: bold;
+    user-select: none;
+    pointer-events: none;
+    font-size: large;
+}
+
+.disabled {
+    user-select: none;
+    pointer-events: none;
+}
+
+.togle_registrate, .select_path {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    color: #282828;
+    font-weight: bold;
+    font-size: large;
+}

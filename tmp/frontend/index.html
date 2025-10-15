@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bec8b2683f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <menu>
+        <div class="ide_container">
+            <header><h1>IDE</h1></header>
+            <div class="ide">
+                <div class="num_bar">
+                    <div class="num">1</div>
+                </div>
+                <div class="edit_space" contenteditable="true"></div>
+            </div>
+        </div>
+        <div class="settup_container">
+            <header><h1>Settup</h1></header>
+            <div class="top_info">
+                <button class="run_script">
+                    <i class="fa-solid fa-power-off"></i>
+                    <h2>Run Script</h2>
+                </button>
+                <button class="save">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    <h2>Save</h2>
+                </button>
+                <button class="show_headles">
+                    <i class="fa-solid fa-eye"></i>
+                    <h2>Show headles</h2>
+                </button>
+            </div>
+            <div class="bottom_info">
+                <div class="toggle_settup_container">
+                    <div class="auto_save_toggle"></div>
+                    <div class="input_shortcut_container">
+                        <input type="text" class="input_shortcut disabled" readonly disabled value="ctrl+c">
+                        <button class="togle_registrate">Registrate</button>
+                    </div>
+                    <div class="input_save_path_container">
+                        <input type="text" class="input_save_path disabled" readonly disabled value="C\Documents\scripts\script.botc">
+                        <button class="select_path"><i class="fa-solid fa-folder"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </menu>
+    <script src="script.js"></script>
+</body>
+</html>

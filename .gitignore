@@ -292,3 +292,5 @@ dist
 
 # VSCode tests
 .vscode-test
+
+private/
